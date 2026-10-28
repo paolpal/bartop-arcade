@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 100" width="514mm" height="100mm">
+  <defs>
+    <linearGradient id="bg_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14141d"/>
+      <stop offset="50%" stop-color="#1e1e28"/>
+      <stop offset="100%" stop-color="#14141d"/>
+    </linearGradient>
+    <linearGradient id="chrome_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="75%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <!-- Logo C= Chicken Lips -->
+    <g id="c_logo">
+      <!-- C shape -->
+      <path d="M 0 0 A 26 26 0 1 0 0 52 L 18 52 A 13 13 0 1 1 18 26 L 3 26 L 3 13 L 18 13 A 13 13 0 1 1 18 0 Z" fill="#0055aa"/>
+      <!-- Top Flag (Red) -->
+      <polygon points="18,13 36,26 18,26" fill="#e52521"/>
+      <!-- Bottom Flag (Cyan) -->
+      <polygon points="18,26 36,26 18,39" fill="#00a3e0"/>
+    </g>
+  </defs>
+
+  <!-- Sfondo -->
+  <rect width="514" height="100" fill="url(#bg_grad)"/>
+
+  <!-- Cornice sottile guida taglio 1:1 -->
+  <rect x="0.5" y="0.5" width="513" height="99" fill="none" stroke="#475569" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <!-- Logo Commodore C= a sinistra -->
+  <g transform="translate(65, 24) scale(0.95)">
+    <!-- Blue C -->
+    <path d="M 28 0 A 26 26 0 1 0 28 52 L 32 52 A 14 14 0 1 1 32 26 L 0 26 A 26 26 0 0 0 28 52 L 34 52" fill="none"/>
+    <path d="M 26 0 C 11.6 0 0 11.6 0 26 C 0 40.4 11.6 52 26 52 C 34 52 40 48 45 42 L 33 34 C 31 37 28 39 25 39 C 17.8 39 12 33.2 12 26 C 12 18.8 17.8 13 25 13 C 28 13 31 15 33 18 L 45 10 C 40 4 34 0 26 0 Z" fill="#0066cc"/>
+    <!-- Flags -->
+    <polygon points="34,14 55,26 34,26" fill="#e52521"/>
+    <polygon points="34,26 55,26 34,38" fill="#00a3e0"/>
+  </g>
+
+  <!-- Testo Principale -->
+  <text x="135" y="47" font-family="'Eurostile', 'Microgramma', 'Arial Black', sans-serif" font-size="28" font-weight="900" fill="url(#chrome_grad)" letter-spacing="1.5">COMMODORE 64</text>
+  <text x="137" y="68" font-family="'Eurostile', 'Microgramma', 'Arial Black', sans-serif" font-size="16" font-weight="800" fill="#f8fafc" letter-spacing="8">A R C A D E</text>
+
+  <!-- Stemma Vintage Personal Computer a destra -->
+  <text x="439" y="36" font-family="monospace" font-size="7" font-weight="bold" fill="#94a3b8" letter-spacing="1">64K SYSTEM</text>
+  <text x="439" y="48" font-family="monospace" font-size="6.5" fill="#64748b">HI-RES AUDIO</text>
+  <text x="439" y="60" font-family="monospace" font-size="6.5" fill="#64748b">SID 6581 CHIP</text>
+
+  <!-- Le 5 Iconiche Strisce Arcobaleno Commodore (Lungo tutto il fondo) -->
+  <g transform="translate(0, 82)">
+    <rect x="0" y="0" width="514" height="2.8" fill="#e52521"/> <!-- Rosso -->
+    <rect x="0" y="2.8" width="514" height="2.8" fill="#f78f1e"/> <!-- Arancione -->
+    <rect x="0" y="5.6" width="514" height="2.8" fill="#fed100"/> <!-- Giallo -->
+    <rect x="0" y="8.4" width="514" height="2.8" fill="#43b02a"/> <!-- Verde -->
+    <rect x="0" y="11.2" width="514" height="2.8" fill="#00a3e0"/> <!-- Celeste/Blu -->
+  </g>
+</svg>

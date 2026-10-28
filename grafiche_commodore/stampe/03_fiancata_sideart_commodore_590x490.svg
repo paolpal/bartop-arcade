@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 590" width="490mm" height="590mm">
+  <defs>
+    <!-- Gradiente Sfondo Biscottone C64 -->
+    <linearGradient id="c64_tan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cfc0a7"/>
+      <stop offset="60%" stop-color="#bfae94"/>
+      <stop offset="100%" stop-color="#a8987e"/>
+    </linearGradient>
+
+    <!-- Clip Path sulla sagoma esatta della fiancata -->
+    <clipPath id="fiancata_clip">
+      <path d="M 0,590 L 430,590 L 455,575 L 475,540 L 488,480 L 490,450 L 488,435 L 475,422 L 265,395 L 175,125 L 240,105 L 255,35 L 245,12 L 220,0 L 30,0 L 8,10 L 0,25 L 0,590 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Gruppo Ritagliato sulla Sagoma della Fiancata -->
+  <g clip-path="url(#fiancata_clip)">
+    <!-- Sfondo Tinta Unita / Goffrato Biscottone -->
+    <rect width="490" height="590" fill="url(#c64_tan)"/>
+
+    <!-- Micro-griglia grafica sottile rétro -->
+    <pattern id="grid_subtle" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#ab997f" stroke-width="0.3" stroke-opacity="0.4"/>
+    </pattern>
+    <rect width="490" height="590" fill="url(#grid_subtle)"/>
+
+    <!-- 5 Strisce Arcobaleno Dinamiche che curvano lungo la fiancata -->
+    <g transform="translate(-50, 40) rotate(-18 200 350)">
+      <path d="M 0 350 Q 200 320 500 240 L 500 252 Q 200 332 0 362 Z" fill="#e52521"/>
+      <path d="M 0 362 Q 200 332 500 252 L 500 264 Q 200 344 0 374 Z" fill="#f78f1e"/>
+      <path d="M 0 374 Q 200 344 500 264 L 500 276 Q 200 356 0 386 Z" fill="#fed100"/>
+      <path d="M 0 386 Q 200 356 500 276 L 500 288 Q 200 368 0 398 Z" fill="#43b02a"/>
+      <path d="M 0 398 Q 200 368 500 288 L 500 300 Q 200 380 0 410 Z" fill="#00a3e0"/>
+    </g>
+
+    <!-- Grande Logo Commodore C= al Centro della Fiancata -->
+    <g transform="translate(180, 180) scale(2.2)">
+      <!-- Blue C -->
+      <path d="M 26 0 C 11.6 0 0 11.6 0 26 C 0 40.4 11.6 52 26 52 C 34 52 40 48 45 42 L 33 34 C 31 37 28 39 25 39 C 17.8 39 12 33.2 12 26 C 12 18.8 17.8 13 25 13 C 28 13 31 15 33 18 L 45 10 C 40 4 34 0 26 0 Z" fill="#0055aa"/>
+      <!-- Flags -->
+      <polygon points="34,14 55,26 34,26" fill="#e52521"/>
+      <polygon points="34,26 55,26 34,38" fill="#00a3e0"/>
+    </g>
+
+    <!-- Targhetta in Alluminio Satinato Rétro in basso a destra -->
+    <g transform="translate(180, 480)">
+      <rect x="0" y="0" width="180" height="36" rx="3" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.2"/>
+      <rect x="2" y="2" width="176" height="32" rx="2" fill="none" stroke="#ffffff" stroke-width="0.8"/>
+      <!-- Piccolo logo C= -->
+      <g transform="translate(12, 9) scale(0.35)">
+        <path d="M 26 0 C 11.6 0 0 11.6 0 26 C 0 40.4 11.6 52 26 52 C 34 52 40 48 45 42 L 33 34 C 31 37 28 39 25 39 C 17.8 39 12 33.2 12 26 C 12 18.8 17.8 13 25 13 C 28 13 31 15 33 18 L 45 10 C 40 4 34 0 26 0 Z" fill="#0055aa"/>
+        <polygon points="34,14 55,26 34,26" fill="#e52521"/>
+        <polygon points="34,26 55,26 34,38" fill="#00a3e0"/>
+      </g>
+      <text x="40" y="18" font-family="'Eurostile', sans-serif" font-size="10" font-weight="900" fill="#0f172a">commodore 64</text>
+      <text x="41" y="28" font-family="monospace" font-size="6" font-weight="bold" fill="#475569" letter-spacing="1">PERSONAL COMPUTER</text>
+    </g>
+
+    <!-- Testi decorativi vintage in alto -->
+    <g transform="translate(60, 110)">
+      <text x="0" y="0" font-family="monospace" font-size="7" font-weight="bold" fill="#524336">MICROPROCESSOR 6510 @ 0.985 MHz</text>
+      <text x="0" y="10" font-family="monospace" font-size="6" fill="#695646">GRAPHICS VIC-II (320x200 16 COLORS)</text>
+      <text x="0" y="20" font-family="monospace" font-size="6" fill="#695646">SOUND SID 6581 (3 VOICES SYNTH)</text>
+    </g>
+  </g>
+
+  <!-- Linea di taglio perimetro esterno -->
+  <path d="M 0,590 L 430,590 L 455,575 L 475,540 L 488,480 L 490,450 L 488,435 L 475,422 L 265,395 L 175,125 L 240,105 L 255,35 L 245,12 L 220,0 L 30,0 L 8,10 L 0,25 L 0,590 Z" fill="none" stroke="#2c2223" stroke-width="1.5"/>
+</svg>

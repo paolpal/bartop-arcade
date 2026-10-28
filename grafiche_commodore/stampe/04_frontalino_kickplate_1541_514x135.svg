@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 135" width="514mm" height="135mm">
+  <defs>
+    <linearGradient id="tan_bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cfc0a7"/>
+      <stop offset="100%" stop-color="#b8a68b"/>
+    </linearGradient>
+    <linearGradient id="drive_black" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d2526"/>
+      <stop offset="100%" stop-color="#1a1415"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sfondo Biscottone -->
+  <rect width="514" height="135" fill="url(#tan_bg)"/>
+  <rect x="0.5" y="0.5" width="513" height="134" fill="none" stroke="#5a4548" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <!-- Mascherina Centrale Floppy Drive 1541 -->
+  <g transform="translate(147.0, 20)">
+    <!-- Riquadro incassato mascherina (220 x 85 mm) -->
+    <rect x="0" y="0" width="220" height="85" rx="4" fill="url(#drive_black)" stroke="#45383a" stroke-width="2"/>
+
+    <!-- Targhetta superiore Drive 1541 -->
+    <rect x="10" y="10" width="200" height="18" rx="2" fill="#3b3133" stroke="#554447" stroke-width="1"/>
+    <!-- Strisciolina arcobaleno -->
+    <g transform="translate(18, 17)">
+      <rect x="0" y="0" width="35" height="1" fill="#e52521"/>
+      <rect x="0" y="1" width="35" height="1" fill="#f78f1e"/>
+      <rect x="0" y="2" width="35" height="1" fill="#fed100"/>
+      <rect x="0" y="3" width="35" height="1" fill="#43b02a"/>
+      <rect x="0" y="4" width="35" height="1" fill="#00a3e0"/>
+    </g>
+    <text x="60" y="22" font-family="'Eurostile', sans-serif" font-size="8" font-weight="900" fill="#f8fafc">commodore</text>
+    <text x="175" y="22" font-family="'Eurostile', sans-serif" font-size="10" font-weight="900" fill="#ffffff">1541</text>
+
+    <!-- Feritoia Inserimento Dischetto 5.25" -->
+    <rect x="25" y="40" width="170" height="10" rx="1.5" fill="#0a0808" stroke="#1f1819" stroke-width="1"/>
+    <!-- Leva centrale di chiusura / latch del floppy -->
+    <rect x="92" y="36" width="36" height="28" rx="2" fill="#33282a" stroke="#524043" stroke-width="1.2"/>
+    <line x1="110" y1="40" x2="110" y2="60" stroke="#1a1415" stroke-width="2"/>
+
+    <!-- LED di Stato -->
+    <!-- LED POWER (Verde) -->
+    <circle cx="45" cy="68" r="3.5" fill="#22c55e" stroke="#16a34a" stroke-width="1"/>
+    <circle cx="44" cy="67" r="1" fill="#86efac"/>
+    <text x="45" y="78" font-family="monospace" font-size="4.5" font-weight="bold" fill="#94a3b8" text-anchor="middle">PWR</text>
+
+    <!-- LED DRIVE / ACTIVITY (Rosso) -->
+    <circle cx="65" cy="68" r="3.5" fill="#ef4444" stroke="#dc2626" stroke-width="1"/>
+    <circle cx="64" cy="67" r="1" fill="#fca5a5"/>
+    <text x="65" y="78" font-family="monospace" font-size="4.5" font-weight="bold" fill="#94a3b8" text-anchor="middle">ACT</text>
+
+    <text x="165" y="72" font-family="monospace" font-size="5" fill="#64748b">5.25" FLOPPY</text>
+  </g>
+
+  <!-- Pulsanti Credito Monete (Coin 1 & Coin 2 - Fori d=28 a Y=67 mm dal basso, cioè Y_svg = 68 mm) -->
+  <!-- Coin 1 (X = 135 mm) -->
+  <g transform="translate(135, 68)">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#e52521" stroke-dasharray="2,2" stroke-width="1"/>
+    <circle cx="0" cy="0" r="14" fill="#36292b" stroke="#f8fafc" stroke-width="1.5"/>
+    <text x="0" y="2" font-family="sans-serif" font-size="7" font-weight="900" fill="#fff" text-anchor="middle">COIN 1</text>
+    <text x="0" y="26" font-family="'Courier New', monospace" font-size="5.5" font-weight="bold" fill="#3b2b2e" text-anchor="middle">INSERT DISK 1</text>
+  </g>
+
+  <!-- Coin 2 (X = 379 mm) -->
+  <g transform="translate(379, 68)">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#00a3e0" stroke-dasharray="2,2" stroke-width="1"/>
+    <circle cx="0" cy="0" r="14" fill="#36292b" stroke="#f8fafc" stroke-width="1.5"/>
+    <text x="0" y="2" font-family="sans-serif" font-size="7" font-weight="900" fill="#fff" text-anchor="middle">COIN 2</text>
+    <text x="0" y="26" font-family="'Courier New', monospace" font-size="5.5" font-weight="bold" fill="#3b2b2e" text-anchor="middle">INSERT DISK 2</text>
+  </g>
+
+  <!-- Strisciolina Arcobaleno in basso -->
+  <g transform="translate(0, 130)">
+    <rect x="0" y="0" width="514" height="1" fill="#e52521"/>
+    <rect x="0" y="1" width="514" height="1" fill="#f78f1e"/>
+    <rect x="0" y="2" width="514" height="1" fill="#fed100"/>
+    <rect x="0" y="3" width="514" height="1" fill="#43b02a"/>
+    <rect x="0" y="4" width="514" height="1" fill="#00a3e0"/>
+  </g>
+</svg>
